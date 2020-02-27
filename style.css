@@ -1,0 +1,53 @@
+.title {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  font-size: 3rem;
+  border-bottom: 1px solid black;
+  padding-bottom: .5rem;
+}
+
+.challenge-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.link-container {
+  display: flex;
+  justify-content: center;
+  /* width: 39rem; */
+}
+
+.challenge-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 46rem;
+  padding: 1.5rem 0 0 0;
+}
+
+.day-links {
+  color: black;
+  padding: 1.5rem 1rem;
+  margin: 0.5rem;
+  width: 12rem;
+  display: flex;
+  justify-content: center;
+  border: 2.5px solid black;
+  border-radius: 4px;
+}
+
+.day-links.complete {
+  border-color: rgb(73, 112, 73);
+  color: rgb(73, 112, 73);
+  background: rgb(164, 192, 164);
+  cursor: pointer;
+}
+
+.day-links.complete:hover {
+  transition: 500ms ease;
+  color: white;
+  background: rgb(73, 112, 73);
+}
+

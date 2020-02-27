@@ -1,6 +1,6 @@
 html {
   font-size: 10px;
-  /* background: url(https://i.imgur.com/b9r5sEL.jpg) bottom center; */
+  background: url(https://i.imgur.com/b9r5sEL.jpg) bottom center;
   background-size: cover;
 }
 
@@ -49,3 +49,33 @@ kbd {
   letter-spacing: .1rem;
   color: #ffc600;
 }
+
+.back-button {
+  font-size: 1.4rem;
+  position: absolute;
+  top: 2rem;
+  left: 3rem;
+  text-shadow: 0 0 .5rem black;
+  padding: 5px;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 3px;
+  background: rgba(0,0,0,0.4);
+  border: .15rem solid black;
+  color: white;
+  transition: 500ms ease;
+}
+
+.back-button:hover {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+a {
+  text-decoration: none;
+}
+
