@@ -5,95 +5,101 @@
   <title>Array Cardio 💪</title>
 </head>
 <body>
-  <p><em>Psst: have a look at the JavaScript Console</em> 💁</p>
+  <a href="../index.html">
+    <div class="back-button">Back</div>
+  </a>
 
-  <p>
-    <h2>Data</h2> 
-    const inventors = [ <br>
-    { first: 'Albert', last: 'Einstein', year: 1879, passed: 1955 }, <br>
-    { first: 'Isaac', last: 'Newton', year: 1643, passed: 1727 },<br>
-    { first: 'Galileo', last: 'Galilei', year: 1564, passed: 1642 },<br>
-    { first: 'Marie', last: 'Curie', year: 1867, passed: 1934 },<br>
-    { first: 'Johannes', last: 'Kepler', year: 1571, passed: 1630 }, <br>
-    { first: 'Nicolaus', last: 'Copernicus', year: 1473, passed: 1543 }, <br>
-    { first: 'Max', last: 'Planck', year: 1858, passed: 1947 }, <br>
-    { first: 'Katherine', last: 'Blodgett', year: 1898, passed: 1979 }, <br>
-    { first: 'Ada', last: 'Lovelace', year: 1815, passed: 1852 }, <br>
-    { first: 'Sarah E.', last: 'Goode', year: 1855, passed: 1905 }, <br>
-    { first: 'Lise', last: 'Meitner', year: 1878, passed: 1968 }, <br>
-    { first: 'Hanna', last: 'Hammarström', year: 1829, passed: 1909 } <br>
-    ];
-    <br><br>
-    const people = [ <br>
-     'Beck, Glenn', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick', 'Beecher, Henry', 'Beethoven,
-    Ludwig', 'Begin, Menachem', 'Belloc, Hilaire', 'Bellow, Saul', 'Benchley, Robert', 'Benenson, Peter', 'Ben-Gurion,
-    David', 'Benjamin, Walter', 'Benn, Tony', 'Bennington, Chester', 'Benson, Leana', 'Bent, Silas', 'Bentsen, Lloyd',
-    'Berger, Ric', 'Bergman, Ingmar', 'Berio, Luciano', 'Berle, Milton', 'Berlin, Irving', 'Berne, Eric', 'Bernhard,
-    Sandra', 'Berra, Yogi', 'Berry, Halle', 'Berry, Wendell', 'Bethea, Erin', 'Bevan, Aneurin', 'Bevel, Ken', 'Biden,
-    Joseph', 'Bierce, Ambrose', 'Biko, Steve', 'Billings, Josh', 'Biondo, Frank', 'Birrell, Augustine', 'Black, Elk',
-    'Blair, Robert', 'Blair, Tony', 'Blake, William' <br> ];
-  </p>
-
-  <ol>
-    <li>
-      Array.prototype.filter() <br>
-      Filter the list of inventors for those who were born in the 1500's
-    </li>
-    <br>
-
-    <li>
-      Array.prototype.map() <br>
-      Give us an array of the inventors first and last names
-    </li>
-    <br>
-      
-    <li>
-      Array.prototype.sort() <br>
-      Sort the inventors by birthdate, oldest to youngest
-    </li>
-    <br>
-      
-    <li>
-      Array.prototype.reduce()
-      How many years did all the inventors live all together?
-    </li>
-    <br>
-      
-    <li>
-      Sort the inventors by years lived
-    </li>
-    <br>
-
-    <li>
-      Create a list of Boulevards in Paris that contain 'de' anywhere in the name <br>
-      <a href="https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris">https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris</a>
+  <div class="container">
+    <p><em>Psst: have a look at the JavaScript Console</em> 💁</p>
+  
+    <p>
+      <h2>Data</h2> 
+      const inventors = [ <br>
+      { first: 'Albert', last: 'Einstein', year: 1879, passed: 1955 }, <br>
+      { first: 'Isaac', last: 'Newton', year: 1643, passed: 1727 },<br>
+      { first: 'Galileo', last: 'Galilei', year: 1564, passed: 1642 },<br>
+      { first: 'Marie', last: 'Curie', year: 1867, passed: 1934 },<br>
+      { first: 'Johannes', last: 'Kepler', year: 1571, passed: 1630 }, <br>
+      { first: 'Nicolaus', last: 'Copernicus', year: 1473, passed: 1543 }, <br>
+      { first: 'Max', last: 'Planck', year: 1858, passed: 1947 }, <br>
+      { first: 'Katherine', last: 'Blodgett', year: 1898, passed: 1979 }, <br>
+      { first: 'Ada', last: 'Lovelace', year: 1815, passed: 1852 }, <br>
+      { first: 'Sarah E.', last: 'Goode', year: 1855, passed: 1905 }, <br>
+      { first: 'Lise', last: 'Meitner', year: 1878, passed: 1968 }, <br>
+      { first: 'Hanna', last: 'Hammarström', year: 1829, passed: 1909 } <br>
+      ];
       <br><br>
-      Paste into console: 
-      <p class="code">
-        const categories = document.querySelector('.mw-category');
+      const people = [ <br>
+       'Beck, Glenn', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick', 'Beecher, Henry', 'Beethoven,
+      Ludwig', 'Begin, Menachem', 'Belloc, Hilaire', 'Bellow, Saul', 'Benchley, Robert', 'Benenson, Peter', 'Ben-Gurion,
+      David', 'Benjamin, Walter', 'Benn, Tony', 'Bennington, Chester', 'Benson, Leana', 'Bent, Silas', 'Bentsen, Lloyd',
+      'Berger, Ric', 'Bergman, Ingmar', 'Berio, Luciano', 'Berle, Milton', 'Berlin, Irving', 'Berne, Eric', 'Bernhard,
+      Sandra', 'Berra, Yogi', 'Berry, Halle', 'Berry, Wendell', 'Bethea, Erin', 'Bevan, Aneurin', 'Bevel, Ken', 'Biden,
+      Joseph', 'Bierce, Ambrose', 'Biko, Steve', 'Billings, Josh', 'Biondo, Frank', 'Birrell, Augustine', 'Black, Elk',
+      'Blair, Robert', 'Blair, Tony', 'Blake, William' <br> ];
+    </p>
+  
+    <ol>
+      <li>
+        Array.prototype.filter() <br>
+        Filter the list of inventors for those who were born in the 1500's
+      </li>
+      <br>
+  
+      <li>
+        Array.prototype.map() <br>
+        Give us an array of the inventors first and last names
+      </li>
+      <br>
+        
+      <li>
+        Array.prototype.sort() <br>
+        Sort the inventors by birthdate, oldest to youngest
+      </li>
+      <br>
+        
+      <li>
+        Array.prototype.reduce()
+        How many years did all the inventors live all together?
+      </li>
+      <br>
+        
+      <li>
+        Sort the inventors by years lived
+      </li>
+      <br>
+  
+      <li>
+        Create a list of Boulevards in Paris that contain 'de' anywhere in the name <br>
+        <a href="https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris">https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris</a>
         <br><br>
-        const boulevards = Array.from(categories.querySelectorAll('a'));
-        <br><br>
-        const blvdValues = boulevards.map((blvd) => blvd.textContent);
-        <br><br>
-        const filtered = blvdValues.filter( val => val.includes('de'));
-      </p>
-    </li>
-    <br>
-
-    <li>
-      Sort Exercise
-      Sort the people alphabetically by last name
-    </li>
-    <br>
-
-    <li>
-      Reduce Exercise
-      Sum up the instances of each of these
-    </li>
-    <br>
-    
-  </ol>
+        Paste into console: 
+        <p class="code">
+          const categories = document.querySelector('.mw-category');
+          <br><br>
+          const boulevards = Array.from(categories.querySelectorAll('a'));
+          <br><br>
+          const blvdValues = boulevards.map((blvd) => blvd.textContent);
+          <br><br>
+          const filtered = blvdValues.filter( val => val.includes('de'));
+        </p>
+      </li>
+      <br>
+  
+      <li>
+        Sort Exercise
+        Sort the people alphabetically by last name
+      </li>
+      <br>
+  
+      <li>
+        Reduce Exercise
+        Sum up the instances of each of these
+      </li>
+      <br>
+      
+    </ol>
+  </div>
 
   <style>
     .code {
@@ -102,6 +108,36 @@
       /* border: 1px solid rgb(56, 56, 95); */
       border-radius: 2px;
       background: rgb(174, 174, 216);
+    }
+
+    .back-button {
+      font-size: 1rem;
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      padding: 5px;
+      width: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      border-radius: 3px;
+      background: rgba(0,0,0,0.4);
+      border: .07rem solid black;
+      color: white;
+      transition: 500ms ease;
+    }
+
+    .back-button:hover {
+      transform: scale(1.1);
+      border-color: white;
+      box-shadow: 0 0 1rem white;
+    }
+
+    .container {
+      padding-top: 2rem;
+      padding-left: 4rem;
+      width: 80%;
     }
   </style>
 
