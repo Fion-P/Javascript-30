@@ -5,6 +5,9 @@
   <title>JS + CSS Clock</title>
 </head>
 <body>
+    <a href="../index.html">
+      <div class="back-button">Back</div>
+    </a>
 
     <div class="time"></div>
     <div class="clock">
@@ -82,6 +85,31 @@
     }
     .time {
       font-size: 5rem;
+    }
+
+    .back-button {
+      font-size: 1.4rem;
+      position: absolute;
+      top: 2rem;
+      left: 3rem;
+      text-shadow: 0 0 .5rem black;
+      padding: 5px;
+      width: 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      border-radius: 3px;
+      background: rgba(0,0,0,0.4);
+      border: .15rem solid black;
+      color: white;
+      transition: 500ms ease;
+    }
+
+    .back-button:hover {
+      transform: scale(1.1);
+      border-color: white;
+      box-shadow: 0 0 1rem white;
     }
 
   </style>
