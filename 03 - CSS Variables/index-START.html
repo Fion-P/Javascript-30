@@ -5,6 +5,10 @@
   <title>Scoped CSS Variables and JS</title>
 </head>
 <body>
+  <a href="../index.html">
+    <div class="back-button">Back</div>
+  </a>
+
   <h2>Update CSS Variables with <span class='hl'>JS</span></h2>
 
   <div class="controls">
@@ -52,6 +56,31 @@
 
     input {
       width: 100px;
+    }
+
+    .back-button {
+      font-size: 1.4rem;
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      text-shadow: 0 0 .5rem black;
+      padding: 5px;
+      width: 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      border-radius: 3px;
+      background: rgba(0,0,0,0.4);
+      border: .15rem solid black;
+      color: white;
+      transition: 500ms ease;
+    }
+
+    .back-button:hover {
+      transform: scale(1.1);
+      border-color: white;
+      box-shadow: 0 0 1rem white;
     }
   </style>
 
