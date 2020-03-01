@@ -32,13 +32,23 @@
       for (let i = 0; i < this.length; i++) {
         if (year - this[i].year >= 19) return true;
       }
-      
+
       return false;
     }
-    
-    console.log(people.some());
+    console.log("some: ", people.some());
 
     // Array.prototype.every() // is everyone 19 or older?
+    Array.prototype.every = function() {
+
+      const year = new Date().getFullYear();
+
+      for (let i = 0; i < this.length; i++) {
+        if (year - this[i].year < 19) return false;
+      }
+
+      return true;
+    }
+    console.log("every: ", people.every());
 
     // Array.prototype.find()
     // Find is like filter, but instead returns just the one you are looking for
