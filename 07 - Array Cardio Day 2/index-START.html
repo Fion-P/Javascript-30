@@ -69,10 +69,19 @@
     Array.prototype.findIndex = function(id) {
 
       for (let i = 0; i < this.length; i++) {
-        
+        if (this[i].id === id) return i;
       }
-    }
 
+      return null;
+    }
+    console.log("findIndex: ", comments.findIndex(823423));
+
+    console.log("comments before: ", comments);
+    let i = comments.findIndex(823423);
+    comments.splice(i, 1);
+    console.log("comments after: ", comments);
+
+    
   </script>
 </body>
 </html>
