@@ -56,6 +56,10 @@
    When a user clicks a checkbox, holds Shift, and then clicks another checkbox a few rows down, all the checkboxes inbetween those two checkboxes should be checked.
 
   -->
+  <a href="../index.html">
+    <div class="back-button">Back</div>
+  </a>
+  
   <div class="inbox">
     <div class="item">
       <input type="checkbox">
@@ -102,7 +106,7 @@
   let lastChecked;
 
   function handleCheck(e) {
-    
+
     // check if they had the shiftkey down 
     // AND check that they are checking it
     let inBetween = false;
@@ -125,5 +129,31 @@
   })
 
 </script>
+<style>
+  .back-button {
+    font-size: 1rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: 5px;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.4);
+    border: .07rem solid black;
+    color: white;
+    transition: 500ms ease;
+  }
+
+  .back-button:hover {
+    transform: scale(1.1);
+    border-color: white;
+    box-shadow: 0 0 1rem white;
+  }
+
+</style>
 </body>
 </html>
